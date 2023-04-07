@@ -1,0 +1,16 @@
+C:\Repo3\FinalTask\obj\Debug\net5.0\FinalTask.csproj.AssemblyReference.cache
+C:\Repo3\FinalTask\obj\Debug\net5.0\FinalTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repo3\FinalTask\obj\Debug\net5.0\FinalTask.AssemblyInfoInputs.cache
+C:\Repo3\FinalTask\obj\Debug\net5.0\FinalTask.AssemblyInfo.cs
+C:\Repo3\FinalTask\obj\Debug\net5.0\FinalTask.csproj.CoreCompileInputs.cache
+C:\Repo3\FinalTask\bin\Debug\net5.0\FinalTask.exe
+C:\Repo3\FinalTask\bin\Debug\net5.0\FinalTask.deps.json
+C:\Repo3\FinalTask\bin\Debug\net5.0\FinalTask.runtimeconfig.json
+C:\Repo3\FinalTask\bin\Debug\net5.0\FinalTask.runtimeconfig.dev.json
+C:\Repo3\FinalTask\bin\Debug\net5.0\FinalTask.dll
+C:\Repo3\FinalTask\bin\Debug\net5.0\ref\FinalTask.dll
+C:\Repo3\FinalTask\bin\Debug\net5.0\FinalTask.pdb
+C:\Repo3\FinalTask\obj\Debug\net5.0\FinalTask.dll
+C:\Repo3\FinalTask\obj\Debug\net5.0\ref\FinalTask.dll
+C:\Repo3\FinalTask\obj\Debug\net5.0\FinalTask.pdb
+C:\Repo3\FinalTask\obj\Debug\net5.0\FinalTask.genruntimeconfig.cache
