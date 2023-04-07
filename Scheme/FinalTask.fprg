@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="smaha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-06 09:24:43 "/>
+        <attribute name="created" value="c21haGE7REVTS1RPUC1WNlIySEM1OzIwMjMtMDMtMjg7IjA4OjEwOjE2ICI7Mjc2MA=="/>
+        <attribute name="edited" value="c21haGE7REVTS1RPUC1WNlIySEM1OzIwMjMtMDQtMDY7IjA5OjI0OjQzICI7MjsyODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="array" type="String" array="True" size="3"/>
+            <input variable="array[0]"/>
+            <input variable="array[1]"/>
+            <input variable="array[2]"/>
+            <declare name="size" type="Integer" array="False" size=""/>
+            <assign variable="size" expression="CountStrings(array)"/>
+            <if expression="size &gt; 0">
+                <then>
+                    <declare name="resultArray" type="String" array="True" size="size"/>
+                    <call expression="CopyStrings(array,resultArray)"/>
+                    <call expression="PrintArray(resultArray)"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+    <function name="CopyStrings" type="None" variable="">
+        <parameters>
+            <parameter name="array1" type="String" array="True"/>
+            <parameter name="array2" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <assign variable="j" expression="0"/>
+            <while expression="i &lt; Size(array1)">
+                <if expression="Len(array1[i]) &lt;= 3">
+                    <then>
+                        <assign variable="array2[j]" expression="array1[i]"/>
+                        <assign variable="j" expression="j + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+    <function name="CountStrings" type="Integer" variable="count">
+        <parameters>
+            <parameter name="array" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <while expression="i &lt; Size(array)">
+                <if expression="Len(array[i]) &lt;= 3">
+                    <then>
+                        <assign variable="count" expression="count + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+    <function name="PrintArray" type="None" variable="">
+        <parameters>
+            <parameter name="array" type="String" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; Size(array)">
+                <output expression="array[i]" newline="True"/>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
